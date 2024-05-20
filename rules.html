@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    body {
+      background-image: url('https://www.teahub.io/photos/full/225-2257321_light-blue-blur-background.jpg');
+    }
+
+    h1 {
+      color: #7c795d;
+      font-family: 'Trocchi', serif;
+      font-size: 45px;
+      font-weight: normal;
+      line-height: 48px;
+      margin: 50;
+      margin-left: 250px;
+    }
+
+    ul.a {
+      list-style-type: square;
+      padding-left: 32px;
+      text-align: left;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: large;
+      color: darkslateblue;
+      font-weight: bold;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    #sidebar-left,
+    #main,
+    #sidebar-right {
+      float: left;
+      display: inline;
+      position: relative;
+    }
+
+    #sidebar-left,
+    #sidebar-right {
+      width: 20%;
+    }
+
+    body.one-sidebar #main {
+      width: 80%;
+    }
+
+    body.two-sidebars #main {
+      width: 60%;
+    }
+
+    body.sidebar-left #main-squeeze {
+      margin-left: 20px;
+    }
+
+    body.sidebar-right #main-squeeze {
+      margin-right: 20px;
+    }
+
+    body.two-sidebars #main-squeeze {
+      margin: 0 20px;
+    }
+
+    #img {
+      border: 1px solid rgb(41, 19, 100);
+      border-radius: 4px;
+      padding: 5px;
+      width: 500px;
+      margin-left: 400px;
+    }
+  </style>
+</head>
+
+<body>
+   <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="./rules.html" class="w3-bar-item w3-button">Home</a>
+    <a href="./demo.html" class="w3-bar-item w3-button">Example</a>
+    </div>
+
+    <div>
+      <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+
+      <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+      </script>
+
+      <h1>RULES FOR PLAYING ONLINE BOWLING</h1>
+      <h2>BASIC AIM OF THE GAME</h2>
+
+      <ul class="a">
+        <li>The goal is to knock down all ten pins.</li>
+        <li>Each frame consists of throwing the ball twice to knock down all the pins.</li>
+        <li>If you knock down all the pins with the first ball, it is called a "strike".</li>
+        <li>If you knock down all the pins with the second ball, it is called a "spare".</li>
+        <li>Each games consists of ten frames. If you bowl a strike in the tenth frame, you get
+          two more balls. If you throw a spare, you get one more ball.</li>
+        <li>frames are frames without a strike or spare.</li>
+        <li>Scoring is based on the number of pins you knock down. However, if you bowl a
+          spare, you get to add the pins in your next ball to that frame. For strikes, you get
+          the next two balls.</li>
+        <li> average of three games is played. You determine a 3 game average by adding
+          all 3 scores and then dividing that number by 3.</li>
+        <li>Accurate preliminary scores are essential for fair divisioning.</li>
+      </ul>
+      <h2>HOW TO PLAY ONLINE <strong><em>BOWLING</em></strong></h2>
+      <ul class="a">
+        <li>Fristly, using your cursor and mouse aim properly. </li>
+        <li>Then after getting it properly press the "z" key on your keybord to throw balls</li>
+        <li>BEST OF LUCK!</li>
+      </ul>
+      <img id="img"
+        src="https://media.istockphoto.com/photos/bowling-picture-id480732472?k=20&m=480732472&s=612x612&w=0&h=9FEbBHsXoQENlSypylK9FTXnB5NINNbCOr5SErRangA=">
+</body>
+
+</html>

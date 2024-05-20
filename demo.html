@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+  <script src="./howToPlay.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+     body {
+      background-image: url('https://www.teahub.io/photos/full/225-2257321_light-blue-blur-background.jpg');
+    }
+
+
+    h1 {
+      color: #7c795d;
+      font-family: 'Trocchi', serif;
+      font-size: 45px;
+      font-weight: normal;
+      line-height: 48px;
+      margin: 50;
+      margin-left: 250px;
+      text-align:justify;
+    }
+
+    #sidebar-left,
+    #main,
+    #sidebar-right {
+      float: left;
+      display: inline;
+      position: static;
+    }
+
+    #sidebar-left,
+    #sidebar-right {
+      width: 20%;
+    }
+
+    body.one-sidebar #main {
+      width: 80%;
+    }
+
+    body.two-sidebars #main {
+      width: 60%;
+    }
+
+    body.sidebar-left #main-squeeze {
+      margin-left: 20px;
+    }
+
+    body.sidebar-right #main-squeeze {
+      margin-right: 20px;
+    }
+
+    body.two-sidebars #main-squeeze {
+      margin: 0 20px;
+    }
+    video{
+      margin-left: 200px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>A DEMO FOR MORE CLARITY</h1>
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="./rules.html" class="w3-bar-item w3-button">Home</a>
+    <a href="./demo.html" class="w3-bar-item w3-button">Example</a>
+  </div>
+
+  <div>
+    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  </div>
+
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+  <video width="1020" height="500" controls>
+    <source src="./demo.webm" type="video/webm">
+  </video>
+
+</body>
+
+</html>
